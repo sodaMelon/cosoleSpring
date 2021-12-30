@@ -18,7 +18,8 @@ public class CommandTest {
 
         String[] urls = {"com.command.Databse", "com.command.ComponentMain", "com.command.ComponentSecond",
                 "com.command.CommandTest", "com.command.ComponentThird",
-                "com.command.MyService"
+                "com.command.NewsDatabase", //  얘가 젤 늦게 생성되면 주입이 안됨!!
+                "com.command.MyService", "com.command.NewsService" // ** 한번 여기에도 넣어보세요 ㅇㅅㅇ
         };
         new ToySpring(urls) .run();
     }
